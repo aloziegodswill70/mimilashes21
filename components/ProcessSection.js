@@ -22,7 +22,11 @@ const steps = [
 
 export default function ProcessSection() {
   return (
-    <section className="py-24 bg-[#0A0A0A] text-white">
+    <section
+      className="py-24 
+      bg-gradient-to-br from-[#fff7f5] via-[#ffece6] to-[#fff] 
+      text-tealDark"
+    >
       <div className="max-w-6xl mx-auto px-6">
         
         <h2 className="text-4xl text-center font-bold text-[#d4af37] mb-16">
@@ -37,13 +41,18 @@ export default function ProcessSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: i * 0.2 }}
               viewport={{ once: true }}
-              className="bg-[#111] p-8 rounded-2xl shadow-xl text-center border border-[#d4af37]/20"
+              className="bg-white p-8 rounded-2xl shadow-xl 
+              border border-[#d4af37]/30 hover:shadow-2xl transition"
             >
               <div className="text-[#d4af37] flex justify-center mb-4">
                 {step.icon}
               </div>
-              <h3 className="font-bold text-xl mb-3">{step.title}</h3>
-              <p className="text-gray-300">{step.desc}</p>
+
+              <h3 className="font-bold text-xl mb-3 text-tealDark">
+                {step.title}
+              </h3>
+
+              <p className="text-gray-600">{step.desc}</p>
             </motion.div>
           ))}
         </div>

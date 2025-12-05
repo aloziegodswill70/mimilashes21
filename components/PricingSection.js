@@ -5,26 +5,35 @@ import { Check } from "lucide-react";
 const plans = [
   {
     name: "Classic Set",
-    price: "₦10,000",
+    price: "RWF 20,000",
     benefits: ["Natural look", "Soft finish", "1.5 hour session"],
   },
   {
     name: "Hybrid Set",
-    price: "₦14,000",
+    price: "RWF 25,000",
     benefits: ["Fuller look", "Mix of classic + volume", "2 hour session"],
   },
   {
     name: "Volume Set",
-    price: "₦18,000",
+    price: "RWF 30,000",
     benefits: ["Bold glam look", "Long-lasting", "2.5 hour session"],
   },
 ];
 
 export default function PricingSection() {
   return (
-    <section className="py-24 bg-black text-white">
+    <section
+      className="
+        py-24 
+        bg-gradient-to-br 
+        from-[#fff8e6] 
+        via-[#fdeedb] 
+        to-[#fff5e1] 
+        text-[#4b3b2a]
+      "
+    >
       <div className="max-w-6xl mx-auto px-6">
-
+        
         <h2 className="text-4xl font-bold text-center text-[#d4af37] mb-16">
           Pricing Packages
         </h2>
@@ -37,16 +46,23 @@ export default function PricingSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.2 }}
               viewport={{ once: true }}
-              className="bg-[#111] p-8 rounded-2xl shadow-xl border border-[#d4af37]/20"
+              className="
+                bg-white 
+                p-8 
+                rounded-2xl 
+                shadow-xl 
+                border border-[#d4af37]/30
+              "
             >
               <h3 className="text-2xl font-bold text-center text-[#d4af37] mb-2">
                 {plan.name}
               </h3>
-              <p className="text-center text-3xl font-extrabold mb-6">
+
+              <p className="text-center text-3xl font-extrabold mb-6 text-[#4b3b2a]">
                 {plan.price}
               </p>
 
-              <ul className="space-y-3 text-gray-300">
+              <ul className="space-y-3 text-gray-700">
                 {plan.benefits.map((b, j) => (
                   <li key={j} className="flex items-center gap-2">
                     <Check className="text-[#d4af37]" size={20} /> {b}
