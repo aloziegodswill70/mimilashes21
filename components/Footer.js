@@ -26,13 +26,13 @@ export default function Footer() {
           <h3 className="font-semibold mb-3">Follow Us</h3>
           <div className="flex items-center gap-4 text-goldLight text-2xl">
 
-            <a href="https://instagram.com/mimi_lashes21"
+            <a href="https://instagram.com/mimi_lashes21?igsh=YTYzbG4yZnRtcm4%3D&utm_source=qr"
                target="_blank"
                className="hover:text-white transition">
               <FaInstagram />
             </a>
 
-            <a href="https://tiktok.com/@mimi_lashes21"
+            <a href="https://tiktok.com/@mimi_lashes21?_r=1&_t=ZM-91zmj4uq3Dv"
                target="_blank"
                className="hover:text-white transition">
               <FaTiktok />
@@ -50,7 +50,7 @@ export default function Footer() {
               <FaYoutube />
             </a>
 
-            <a href="https://facebook.com"
+            <a href="https://facebook.com/share/14TdJrEKgPH/?mibextid=wwXlfr"
                target="_blank"
                className="hover:text-white transition">
               <FaFacebook />

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const reviews = [
   {
-    name: "Amara Beauty",
+    name: "Rihana Beauty",
     text: "The best lash experience ever! My lashes stayed fresh for weeks.",
   },
   {
@@ -11,7 +11,7 @@ const reviews = [
     text: "Her professionalism is top notch. Highly recommended!",
   },
   {
-    name: "Chichi Glow",
+    name: "Joy Glow",
     text: "I love the ambience, the service, everything! 10/10.",
   },
 ];

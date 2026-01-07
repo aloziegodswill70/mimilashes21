@@ -6,13 +6,13 @@ import { Instagram, Music2, Facebook, Youtube, PhoneCall } from "lucide-react";
 const socials = [
   {
     name: "Instagram",
-    link: "https://instagram.com/mimi_lashes21",
+    link: "https://instagram.com/mimi_lashes21?igsh=YTYzbG4yZnRtcm4%3D&utm_source=qr",
     icon: <Instagram size={32} color="#E1306C" />, // Instagram pink
     hover: "#ff4f8a",
   },
   {
     name: "TikTok",
-    link: "https://tiktok.com/@mimi_lashes21",
+    link: "https://tiktok.com/@mimi_lashes21?_r=1&_t=ZM-91zmj4uq3Dv",
     icon: <Music2 size={32} color="#010101" />, // TikTok dark
     hover: "#ff0050",
   },
@@ -24,7 +24,7 @@ const socials = [
   },
   {
     name: "Facebook",
-    link: "https://facebook.com",
+    link: "https://facebook.com/share/14TdJrEKgPH/?mibextid=wwXlfr",
     icon: <Facebook size={32} color="#1877f2" />, // Facebook blue
     hover: "#2e90ff",
   },

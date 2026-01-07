@@ -51,7 +51,7 @@ export default function Navbar() {
 
           {/* Instagram icon */}
           <a
-            href="https://instagram.com/mimi_lashes21"
+            href="https://instagram.com/mimi_lashes21?igsh=YTYzbG4yZnRtcm4%3D&utm_source=qr"
             target="_blank"
             className="hover:text-goldLight"
           >
@@ -60,7 +60,7 @@ export default function Navbar() {
 
           {/* TikTok icon */}
           <a
-            href="https://tiktok.com/@mimi_lashes21"
+             href="https://tiktok.com/@mimi_lashes21?_r=1&_t=ZM-91zmj4uq3Dv"
             target="_blank"
             className="hover:text-goldLight"
           >
