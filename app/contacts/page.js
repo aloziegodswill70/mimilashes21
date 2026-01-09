@@ -58,9 +58,13 @@ export default function ContactForm() {
           ></textarea>
         </div>
 
-        <button className="w-full bg-tealDark text-white py-3 rounded-lg font-semibold hover:bg-black transition">
-          Submit
+          <button
+            onClick={() => window.open("https://wa.me/250784658639", "_blank")}
+            className="w-full bg-tealDark text-white py-3 rounded-lg font-semibold hover:bg-black transition"
+          >
+            Submit
         </button>
+
 
         {status && (
           <p className="text-green-600 text-center mt-4">{status}</p>
@@ -94,7 +98,7 @@ export default function ContactForm() {
 
         <div className="flex justify-center gap-6 text-tealDark text-4xl">
           <a
-            href="https://instagram.com/mimi_lashes21"
+            href="https://instagram.com/mimi_lashes21?igsh=YTYzbG4yZnRtcm4%3D&utm_source=qr"
             target="_blank"
             className="hover:text-black transition"
           >
@@ -102,7 +106,7 @@ export default function ContactForm() {
           </a>
 
           <a
-            href="https://tiktok.com/@mimi_lashes21"
+            href="https://tiktok.com/@mimi_lashes21?_r=1&_t=ZM-91zmj4uq3Dv"
             target="_blank"
             className="hover:text-black transition"
           >
@@ -118,7 +122,7 @@ export default function ContactForm() {
           </a>
 
           <a
-            href="https://facebook.com"
+            href="https://facebook.com/share/14TdJrEKgPH/?mibextid=wwXlfr"
             target="_blank"
             className="hover:text-black transition"
           >

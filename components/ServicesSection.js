@@ -5,22 +5,22 @@ import { motion } from "framer-motion";
 const services = [
   {
     title: "Classic Lashes",
-    price: "10,000 RWF",
+    price: "25,000 RWF",
     desc: "A natural enhancement giving you a clean, simple lash look.",
   },
   {
     title: "Hybrid Lashes",
-    price: "15,000 RWF",
+    price: "30,000 RWF",
     desc: "A beautiful mix of classic and volume for a fuller look.",
   },
   {
     title: "Volume Lashes",
-    price: "20,000 RWF",
+    price: "35,000 RWF",
     desc: "Soft, fluffy fans giving dramatic fullness and beauty.",
   },
   {
     title: "Mega Volume",
-    price: "25,000 RWF",
+    price: "40,000 RWF",
     desc: "Ultra-full glamorous lashes for bold queens.",
   },
 ];

@@ -15,7 +15,7 @@ export default function MobileFooterBar() {
       </a>
 
       <a
-        href="https://instagram.com/mimi_lashes21"
+        href="https://instagram.com/mimi_lashes21?igsh=YTYzbG4yZnRtcm4%3D&utm_source=qr"
         target="_blank"
         className="flex flex-col items-center text-goldLight"
       >

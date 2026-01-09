@@ -1,73 +1,80 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X, Instagram, Music2 } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
 
   return (
     <nav className="w-full bg-tealDark text-white px-6 py-4 shadow-md fixed top-0 left-0 z-50">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
 
-        {/* Logo */}
-        <h1 className="text-xl font-bold">MIMIlashes</h1>
+        {/* ================= LEFT: BRAND ================= */}
+        <a
+          href="/"
+          className="text-lg font-bold tracking-wide hover:text-goldLight transition"
+        >
+          mimilashes21
+        </a>
 
-        {/* ================================
-            DESKTOP NAVIGATION
-        ================================== */}
-        <div className="hidden md:flex items-center space-x-10">
-          <a href="/" className="hover:text-goldLight">Home</a>
-          <a href="/services" className="hover:text-goldLight">Services</a>
-          <a href="/gallery" className="hover:text-goldLight">Gallery</a>
-          <a href="/contacts" className="hover:text-goldLight">Contact</a>
-        </div>
-
-        {/* Desktop Social Icons */}
-        <div className="hidden md:flex items-center space-x-4">
-          <a
-            href="https://instagram.com/mimi_lashes21"
-            target="_blank"
-            className="hover:text-goldLight"
-          >
-            <Instagram size={22} />
+        {/* ================= DESKTOP LINKS ================= */}
+        <div className="hidden md:flex items-center gap-10 text-sm font-medium">
+          <a href="/services" className="hover:text-goldLight transition">
+            Services
           </a>
-
-          <a
-            href="https://tiktok.com/@mimi_lashes21"
-            target="_blank"
-            className="hover:text-goldLight"
-          >
-            <Music2 size={22} />
+          <a href="/packages" className="hover:text-goldLight transition">
+            Packages
+          </a>
+          <a href="/about" className="hover:text-goldLight transition">
+            About
+          </a>
+          <a href="/contacts" className="hover:text-goldLight transition">
+            Contacts
           </a>
         </div>
 
-        {/* ================================
-            MOBILE NAVIGATION (MINIMAL)
-        ================================== */}
-        <div className="flex md:hidden items-center space-x-4">
+        {/* ================= RIGHT ICONS ================= */}
+        <div className="flex items-center gap-5">
 
-          {/* Home */}
-          <a href="/" className="font-semibold text-sm">Home</a>
-
-          {/* Instagram icon */}
+          {/* Instagram – always visible */}
           <a
             href="https://instagram.com/mimi_lashes21?igsh=YTYzbG4yZnRtcm4%3D&utm_source=qr"
             target="_blank"
-            className="hover:text-goldLight"
+            rel="noopener noreferrer"
+            className="hover:text-goldLight transition"
           >
             <Instagram size={22} />
           </a>
 
-          {/* TikTok icon */}
-          <a
-             href="https://tiktok.com/@mimi_lashes21?_r=1&_t=ZM-91zmj4uq3Dv"
-            target="_blank"
-            className="hover:text-goldLight"
+          {/* Menu icon – MOBILE ONLY */}
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden focus:outline-none"
+            aria-label="Toggle menu"
           >
-            <Music2 size={22} />
-          </a>
+            {open ? <X size={26} /> : <Menu size={26} />}
+          </button>
         </div>
       </div>
+
+      {/* ================= MOBILE DROPDOWN ================= */}
+      {open && (
+        <div className="md:hidden bg-tealDark border-t border-white/10 mt-4 px-6 py-6 space-y-6 text-center text-sm font-medium">
+          <a href="/services" className="block hover:text-goldLight">
+            Services
+          </a>
+          <a href="/packages" className="block hover:text-goldLight">
+            Packages
+          </a>
+          <a href="/about" className="block hover:text-goldLight">
+            About
+          </a>
+          <a href="/contacts" className="block hover:text-goldLight">
+            Contacts
+          </a>
+        </div>
+      )}
     </nav>
   );
 }

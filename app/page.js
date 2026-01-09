@@ -57,6 +57,25 @@ export default function Home() {
         <SocialMedia />
       </section>
 
+      <section className="py-12 px-6 text-center text-sm text-gray-600">
+  <p className="mb-3 font-semibold">Explore More</p>
+
+      <div className="flex flex-wrap justify-center gap-4 underline">
+        <a href="/blog2026">About MIMIlashes21</a>
+        <a href="/packages">Eyelash Packages</a>
+        <a href="/best-eyelashes-salon-in-kigali-rwanda">
+          Best Eyelashes Salon in Kigali
+        </a>
+        <a href="/where-can-i-fix-lashes-in-kigali-rwanda">
+          Where to Fix Lashes in Kigali
+        </a>
+        <a href="/5-reasons-you-should-visit-mimilashes21">
+          Why Choose MIMIlashes21
+        </a>
+      </div>
+</section>
+
+
     </main>
   );
 }
