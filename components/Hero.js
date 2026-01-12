@@ -76,7 +76,9 @@ export default function HeroSection() {
           className="flex gap-4 mt-8"
         >
           <a
-            href="/contacts"
+          href="https://wa.me/250784658639"
+          target="_blank"
+          rel="noopener noreferrer"
             className="bg-transparent border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition"
           >
             Book Appointment

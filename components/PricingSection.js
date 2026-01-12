@@ -5,17 +5,17 @@ import { Check } from "lucide-react";
 const plans = [
   {
     name: "Classic Set",
-    price: "RWF 20,000",
+    price: "RWF 25,000",
     benefits: ["Natural look", "Soft finish", "1.5 hour session"],
   },
   {
     name: "Hybrid Set",
-    price: "RWF 25,000",
+    price: "RWF 30,000",
     benefits: ["Fuller look", "Mix of classic + volume", "2 hour session"],
   },
   {
     name: "Volume Set",
-    price: "RWF 30,000",
+    price: "RWF 35,000",
     benefits: ["Bold glam look", "Long-lasting", "2.5 hour session"],
   },
 ];
